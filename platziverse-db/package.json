@@ -1,0 +1,35 @@
+{
+  "name": "platziverse-db",
+  "version": "1.0.0",
+  "description": "A simple IoT platform - DB module",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env DEBUG=platziverse:* nyc --reporter=lcov ava tests/*-tests.js --verbose",
+    "setup": "cross-env DEBUG=platziverse:* node setup.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016\u0016https://github.com/SoftOnSteroids/platziverse"
+  },
+  "author": "Franco Coloccini",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.8.1",
+    "nyc": "^15.0.1",
+    "proxyquire": "^2.1.3",
+    "sinon": "^9.0.2",
+    "sqlite3": "^4.2.0",
+    "standard": "^14.3.3"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cross-env": "^7.0.2",
+    "debug": "^4.1.1",
+    "defaults": "^1.0.3",
+    "inquirer": "^7.1.0",
+    "pg": "^8.0.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.7"
+  }
+}
